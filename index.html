@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,150,255,.15),transparent 25%),
+radial-gradient(circle at 80% 80%,rgba(170,0,255,.15),transparent 25%);
+z-index:-1;
+}
+
+header{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+.hero{
+max-width:1000px;
+width:100%;
+text-align:center;
+padding:50px;
+border-radius:30px;
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 0 40px rgba(0,150,255,.15);
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+background:linear-gradient(90deg,#00d4ff,#7b2cff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:1.2rem;
+color:#cfcfcf;
+line-height:2;
+max-width:800px;
+margin:auto;
+}
+
+.icons{
+display:flex;
+justify-content:center;
+gap:20px;
+margin:30px 0;
+font-size:3rem;
+}
+
+.glow-btn{
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+background:linear-gradient(90deg,#00d4ff,#7b2cff);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+box-shadow:0 0 25px rgba(0,200,255,.4);
+}
+
+.glow-btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+font-size:2.3rem;
+text-align:center;
+margin-bottom:40px;
+color:#00d4ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0d0d0d;
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.06);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,150,255,.2);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#00d4ff;
+}
+
+.progress{
+margin-top:25px;
+}
+
+.bar{
+height:18px;
+background:#161616;
+border-radius:50px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#00d4ff,#7b2cff);
+}
+
+.support-box{
+text-align:center;
+padding:50px;
+border-radius:30px;
+background:#0d0d0d;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.btns{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+cursor:pointer;
+border-radius:50px;
+font-size:1rem;
+font-weight:700;
+color:white;
+}
+
+.yes{
+background:linear-gradient(90deg,#00d4ff,#7b2cff);
+}
+
+.no{
+background:#222;
+}
+
+.result{
+margin-top:30px;
+font-size:1.1rem;
+}
+
+.telegram{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#229ED9;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#888;
+}
+
+.counter{
+font-size:2rem;
+font-weight:bold;
+color:#00d4ff;
+margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+
+<div class="icons">
+🖥️ 💻 ⚡ 🎮 🚀 🤖
+</div>
+
+<h1>COMPUTER HUB</h1>
+
+<p>
+به دنیای تکنولوژی خوش اومدی!
+<br><br>
+ما در حال ساخت یک پیج و کانال تخصصی در زمینه کامپیوتر، گیمینگ، آموزش‌های کاربردی، اخبار تکنولوژی و ترفندهای حرفه‌ای هستیم.
+<br><br>
+اگر به دنیای تکنولوژی علاقه داری، می‌تونی بخشی از این مسیر باشی.
+</p>
+
+<a href="#support" class="glow-btn">
+🚀 ورود به پروژه
+</a>
+
+<div class="counter">
+👥 +12,500 بازدید
+</div>
+
+</div>
+</header>
+
+<section>
+
+<h2 class="title">🎯 اهداف ما</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🖥️ آموزش کامپیوتر</h3>
+<p>آموزش‌های کاربردی برای کاربران مبتدی و حرفه‌ای.</p>
+</div>
+
+<div class="card">
+<h3>🎮 گیمینگ</h3>
+<p>اخبار بازی‌ها، سیستم‌های گیمینگ و ترفندهای جذاب.</p>
+</div>
+
+<div class="card">
+<h3>⚡ تکنولوژی</h3>
+<p>جدیدترین اخبار دنیای فناوری و هوش مصنوعی.</p>
+</div>
+
+<div class="card">
+<h3>🚀 رشد جامعه</h3>
+<p>ساخت یک جامعه حرفه‌ای برای علاقه‌مندان به تکنولوژی.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">📊 وضعیت پروژه</h2>
+
+<div class="progress">
+طراحی پروژه
+<div class="bar">
+<div class="fill" style="width:100%"></div>
+</div>
+</div>
+
+<div class="progress">
+آماده‌سازی محتوا
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="progress">
+توسعه کانال
+<div class="bar">
+<div class="fill" style="width:70%"></div>
+</div>
+</div>
+
+</section>
+
+<section id="support">
+
+<div class="support-box">
+
+<h2>💙 آیا مایل به حمایت از پروژه هستید؟</h2>
+
+<div class="btns">
+<button class="btn yes" onclick="yesSupport()">بله 🚀</button>
+<button class="btn no" onclick="noSupport()">خیر</button>
+</div>
+
+<div id="result" class="result"></div>
+
+</div>
+
+</section>
+
+<footer>
+Computer Hub © 2026
+</footer>
+
+<script>
+
+function yesSupport(){
+document.getElementById("result").innerHTML=
+`
+<h3>🎉 ممنون از حمایتت!</h3>
+<p>برای همراهی با ما وارد کانال تلگرام شو:</p>
+<a class="telegram" href="https://t.me/amir14yt" target="_blank">
+📢 ورود به کانال تلگرام
+</a>
+`;
+}
+
+function noSupport(){
+document.getElementById("result").innerHTML=
+`
+<h3>🙏 ممنون از بازدیدت</h3>
+<p>امیدواریم دوباره به سایت ما سر بزنی.</p>
+`;
+}
+
+</script>
+
+</body>
+</html>
